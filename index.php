@@ -14,18 +14,19 @@
     <?php 
     // sono un commento!
 
-  // supervariabili globali
-    echo $
-
+    
     // echo serve per visualizzare codice in pagina
     echo "E ciao mondo!";
-
+    
+    echo "<br>";
     // variabili
     $name = "Gio";
-    echo "Ciao " . $name;
+    
+    // supervariabili globali
+	  echo "Ciao anche a " . $_GET["name"] . "!";
 
-    $eta = 34;
-    echo $eta;
+    // $eta = 34;
+    // echo $eta;
     ?>
   </body>
 </html>
