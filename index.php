@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Il mio primo PHP</title>
+    <style>
+      form{
+        display: flex;
+        flex-flow: column;
+        gap: .8em;
+        width: 300px;
+        padding: 1em;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin: 2em auto 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>
-    Ciao mamma!
-    </h1>
-    
-    <!-- questo è uno squacio php -->
-    <?php 
-    // sono un commento!
+ <h1>Salutati</h1>
 
-    
-    // echo serve per visualizzare codice in pagina
-    echo "E ciao mondo!";
-    
-    echo "<br>";
-    // variabili
-    $name = "Gio";
-    
-    // supervariabili globali
-	  echo "Ciao anche a " . $_GET["name"] . "!";
+ <p>Compila il fomr qui sotto per avere un saluto personalizzato dal nostro sito web!</p>
 
-    // $eta = 34;
-    // echo $eta;
-    ?>
+ <hr>
+
+ <!-- FORM -->
+ <form action="./saluto.php" method="GET">
+  <label for="">Come ti chiami?</label> 
+  <input type="text" name="nominativo" placeholder="Il tuo nome"> 
+  <button type="submit">Salutami</button>
+ </form>
+
   </body>
 </html>
