@@ -1,3 +1,10 @@
+<?php 
+
+$nominativo = $_GET["nominativo"];
+var_dump($_GET);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +13,20 @@
     <title>Saluto!</title>
 </head>
 <body>
+
+<?php phpinfo(); ?>
+
+    <pre><?php 
+    
+            var_dump($_GET)
+
+        ?>  
+    </pre>
+
     <h1>Ti saluto</h1>
 
     <h2>
-        <?php 
-        
-        echo "Ciao " . $_GET["nominativo"] . "!";
-        
-        ?>
+      Ciao <?php echo $nominativo?>!
     </h2>
 </body>
 </html>
