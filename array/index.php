@@ -16,7 +16,13 @@
         "hobby"=>"Soccer"
     ];
 
-    echo $person["hobby"];
+    $students = [
+        ["name" => "Gigi", "grade"=>10],
+        ["name" => "Alice", "grade"=>8],
+        ["name" => "Sara", "grade"=>9],
+    ];
+
+    echo $students[1]["name"]. " ha preso " . $students[1]["grade"];
 
     ?>
 
