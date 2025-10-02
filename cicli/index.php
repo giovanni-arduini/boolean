@@ -9,20 +9,26 @@
     <?php
     
         
-    $students = [
-        ["name" => "Gigi", "grade"=>10],
-        ["name" => "Alice", "grade"=>8],
-        ["name" => "Sara", "grade"=>9],
-    ];
+    // $students = [
+    //     ["name" => "Gigi", "grade"=>10],
+    //     ["name" => "Alice", "grade"=>8],
+    //     ["name" => "Sara", "grade"=>9],
+    // ];
 
-        foreach ($students as $student){
+    //     foreach ($students as $student){
 
-            foreach ($student as $key => $value)
+    //         foreach ($student as $key => $value)
 
-            echo $key . "  $value - "  ;
-            echo "<br>";
+    //         echo $key . "  $value - "  ;
+    //         echo "<br>";
 
-        }
+    //     }
+
+    for ($i=0; $i <10; $i++){
+
+        echo "Clap! <br>";
+        
+    };
 
     ?>
 </body>
