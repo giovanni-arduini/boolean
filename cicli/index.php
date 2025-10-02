@@ -24,11 +24,28 @@
 
     //     }
 
-    for ($i=0; $i <10; $i++){
+    // for ($i=0; $i <10; $i++){
 
-        echo "Clap! <br>";
+    //     echo "Clap! <br>";
         
-    };
+    // };
+
+
+    $numbers = [];
+    $sum = 0;
+
+
+
+    do {
+
+        $randomNumber = rand(1, 10);
+        
+        $numbers[] = $randomNumber;
+        $somma += $randomNumber;
+
+    } while ($sum < 50);
+
+    echo "La somma totale dei numeri è: " . $sum;
 
     ?>
 </body>
