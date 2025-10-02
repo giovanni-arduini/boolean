@@ -1,8 +1,5 @@
-<?php 
-
+<?php
 $nominativo = $_GET["nominativo"];
-var_dump($_GET);
-
 ?>
 
 <!DOCTYPE html>
@@ -10,23 +7,19 @@ var_dump($_GET);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saluto!</title>
+    <title>Saluto <?php echo $nominativo?></title>
 </head>
 <body>
 
-<?php phpinfo(); ?>
+<!-- con pre posso preformattare il contenuto -->
+<pre>
+    <?php var_dump($_GET)?>
+</pre>
 
-    <pre><?php 
+<h2>
+Ciao <?php echo $nominativo?>!
+</h2>
+
     
-            var_dump($_GET)
-
-        ?>  
-    </pre>
-
-    <h1>Ti saluto</h1>
-
-    <h2>
-      Ciao <?php echo $nominativo?>!
-    </h2>
 </body>
 </html>

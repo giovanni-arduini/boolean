@@ -18,15 +18,16 @@
     </style>
   </head>
   <body>
- <h1>Salutati</h1>
+ <h1>Salùtati!!</h1>
 
- <p>Compila il fomr qui sotto per avere un saluto personalizzato dal nostro sito web!</p>
-
+ <p>Compila il form qui sotto per avere un saluto personalizzato dal nostro sito web!</p>
+ 
  <hr>
 
  <!-- FORM -->
  <form action="./saluto.php" method="GET">
   <label for="">Come ti chiami?</label> 
+  <!-- per sepcificare il nome del parametro da inviare dobbiamo usare "name" -->
   <input type="text" name="nominativo" placeholder="Il tuo nome"> 
   <button type="submit">Salutami</button>
  </form>
