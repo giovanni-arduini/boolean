@@ -65,8 +65,17 @@
     
     <h2>Filtri</h2>
     <form action="">
-        <input type="checkbox" name="parking" id="parking">
-        <label for="parking">Presenza parcheggio</label>
+
+        <div>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Presenza parcheggio</label>
+        </div>
+
+
+        <div>
+            <input type="number" min="1", max="5" name="minimum_vote" id="minimum_vote">
+            <label for="minimum_vote">Voto minimo</label>
+        </div>
 
         <button>Filtra</button>
     </form>
@@ -92,7 +101,7 @@
                     // controllo se hotel ha parcheggio
                     if(!$hotel["parking"]){
                         // e se non ce l'ha saltiamo il ciclo
-                        
+                        continue;
                     } 
                 }
 
