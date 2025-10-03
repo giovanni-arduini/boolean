@@ -33,19 +33,20 @@
 
     $numbers = [];
     $sum = 0;
-
-
+    $counter = 0;
 
     do {
 
         $randomNumber = rand(1, 10);
-        
+
         $numbers[] = $randomNumber;
         $somma += $randomNumber;
+        
+        $counter++;
 
     } while ($sum < 50);
-
-    echo "La somma totale dei numeri è: " . $sum;
+    
+    echo "La somma totale dei numeri è: " . $sum . ", e sono state eseguite " . $counter . "operazioni.";
 
     ?>
 </body>

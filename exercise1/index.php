@@ -50,13 +50,27 @@
 
     ];
 
+    // Controllo filtro parcheggio
     $parking_requested = false;
 
     if(isset($_GET["parking"]) && $_GET["parking"] == "on"){
         $parking_requested = true;
     };
 
-    var_dump($parking_requested)
+    var_dump($parking_requested);
+
+
+    // controllo filtro per voto
+    $minimum_vote = 0;
+
+    if(isset($_GET["minimum_vote"]) && is_numeric($_GET["minimum_vote"]) && $_GET["minimum_vote"] >= 0 && $_GET["minimum_vote"] <=5 ){
+        echo "Voto minimo: " . $_GET["minimum_vote"];
+        $minimum_vote = (int)$_GET["minimum_vote"];
+    };
+
+    var_dump($minimum_vote)
+
+
 ?>
 
 <!-- Tabella -->
@@ -103,6 +117,11 @@
                         // e se non ce l'ha saltiamo il ciclo
                         continue;
                     } 
+                }
+
+                // controlliamo se il voto è maggiore o uguale al minimo settato
+                if($hotel["vote"] < $minimum_vote){
+                    continue;
                 }
 
                  ?>
