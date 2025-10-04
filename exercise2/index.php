@@ -1,45 +1,40 @@
 <?php
+session_start();
 
-
-$password = "";
-
-if($password != ""){
-        // dirottiamo alla pagina password
-        header("Location: ./password.php");
-
-
-        session_start();
-        // salviamo la pass in un avariabile di sessione
-
-        function generatePassword($n): string {
-            $password =  bin2hex(random_bytes($n/2));
-            $_SESSION["password"] = $password;
-        }
-
-        generatePassword($_GET["length"]);
-
-
-    }
-
+if (isset($_GET["letters"])) $_SESSION["letters"] = true;
+if (isset($_GET["symbols"])) $_SESSION["symbols"] = true;
+if (isset($_GET["numbers"])) $_SESSION["numbers"] = true;
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
 </head>
 <body>
-<!-- Form per settare lunghezza -->
 
-<h1>Create a random password!</h1>
+  <form action="save_length.php" method="get">
+    <div>
+      <input type="number" min="5" max="20" name="length" id="length" required>
+      <label for="length">Scegli la lunghezza della password</label>
+    </div>
 
-<form action="password.php">
-    <input type="number" min="4" max="20" name="length" id="length">
-    <label for="length">Inserisci la lunghezza della password</label>
-    <button>Genera password</button>
-</form>
+    <div>
+        <h5>Deve contenere:</h5>
+        <input type="checkbox" name="letters" id="letters">
+        <label for="letters">Lettere</label>
+
+        <input type="checkbox" name="numbers" id="numbers">
+        <label for="numbers">Numeri</label>
+
+        <input type="checkbox" name="symbols" id="symbols">
+        <label for="symbols">Simboli</label>
+    </div>
+
+    <button type="submit">Crea password</button>
+  </form>
 
 </body>
 </html>
