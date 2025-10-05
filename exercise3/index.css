@@ -1,0 +1,12 @@
+.album-card {
+  width: 250px; /* Larghezza fissa della card */
+  min-height: 350px; /* Altezza fissa della card */
+  display: flex;
+  flex-direction: column;
+}
+
+.album-img {
+  width: 100%; /* Riempie tutta la larghezza della card */
+  height: 50%; /* Altezza uniforme */
+  object-fit: cover; /* Ritaglia senza deformare */
+}
