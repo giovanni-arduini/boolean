@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Abbey Road",
+    "artist": "The Beatles",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg",
+    "year": 1969,
+    "genre": "Rock"
+  },
+  {
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
+    "year": 1982,
+    "genre": "Pop"
+  },
+  {
+    "title": "Kind of Blue",
+    "artist": "Miles Davis",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9c/MilesDavisKindofBlue.jpg",
+    "year": 1959,
+    "genre": "Jazz"
+  },
+  {
+    "title": "The Dark Side of the Moon",
+    "artist": "Pink Floyd",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+    "year": 1973,
+    "genre": "Progressive Rock"
+  },
+  {
+    "title": "Back to Black",
+    "artist": "Amy Winehouse",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/0/0b/Amy_Winehouse_-_Back_to_Black_(album).jpg",
+    "year": 2006,
+    "genre": "Soul"
+  },
+  {
+    "title": "Discovery",
+    "artist": "Daft Punk",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/ae/Daft_Punk_-_Discovery.jpg",
+    "year": 2001,
+    "genre": "Electronic"
+  },
+  {
+    "title": "To Pimp a Butterfly",
+    "artist": "Kendrick Lamar",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9f/To_Pimp_a_Butterfly.png",
+    "year": 2015,
+    "genre": "Hip-Hop"
+  },
+  {
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/4/49/Hotelcalifornia.jpg",
+    "year": 1976,
+    "genre": "Rock"
+  },
+  {
+    "title": "Rumors",
+    "artist": "Fleetwood Mac",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
+    "year": 1977,
+    "genre": "Pop Rock"
+  },
+  {
+    "title": "In the Wee Small Hours",
+    "artist": "Frank Sinatra",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/7/7b/In_the_Wee_Small_Hours_album_cover.jpg",
+    "year": 1955,
+    "genre": "Traditional Pop"
+  },
+  {
+    "title": "asd",
+    "artist": "asd",
+    "year": "1902",
+    "genre": "asd",
+    "cover": "asd"
+  }
+]
