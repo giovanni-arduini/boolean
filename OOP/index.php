@@ -1,8 +1,11 @@
 <?php
+// i traits DEVONO essere caricati prima, in modo tale che funzionino quando carichiamo i Models
+require_once "./Traits/Password.php";
 
 require_once "./Models/User.php";
 require_once "./Models/Address.php";
 require_once "./Models/Admin.php";
+
 
     
     $indirizzo_carlo = new Address("Via codice", "24", "Milano", "20144");
@@ -11,11 +14,13 @@ require_once "./Models/Admin.php";
     $carlo = new User("Carlo", "carll@mail.com", 5, $indirizzo_carlo);
     $ilaria = new User("Ilaria", "ila@mail.com", 22, $indirizzo_ilaria);
 
-    $admin = new Admin("Moderator");
+    $admin = new Admin("Gigi", "gg@mgail.com", 3, $indirizzo_carlo, "Moderator");
 
-    echo $admin->getRole();
+    // echo $admin->getRole();
 
-    var_dump($admin);
+    $carlo->setEmail("carlo@gmail.com");
+
+    var_dump($carlo->getEmail());
 
 
 
